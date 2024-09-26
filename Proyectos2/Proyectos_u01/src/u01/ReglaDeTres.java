@@ -14,6 +14,7 @@ public class ReglaDeTres {
 		System.out.print("introduce c");
 		double c = scan.nextDouble();
 		double x = (b * c) / a;
+
 		System.out.println("\nLa solución de la regla de 3 es:");
 		System.out.print(a);
 		System.out.print("--->");
