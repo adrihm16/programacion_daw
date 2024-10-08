@@ -31,8 +31,6 @@ public class U2_E04 {
 			double x2 = ((- b - Math.sqrt(Math.pow(b, 2)-4*a*c))/(a*2));
 			System.out.println("El segundo valor de x es " + x2 +"!");
 			scan.close();
-		}
-		
-		
+		}		
 	}
 }
