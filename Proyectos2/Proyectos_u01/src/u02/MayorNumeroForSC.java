@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * Devuelve el mayor numero de los introducidos por el teclado
  * */
-public class MayorNumeroFor{
+public class MayorNumeroForSC{
 
 	public static void main(String[] args) {
 		// Opción A. Indicamos el numero de datos a evaluar
