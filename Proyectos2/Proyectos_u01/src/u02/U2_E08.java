@@ -24,11 +24,14 @@ public class U2_E08 {
 				int menor;
 				if (numero1 >= numero2) {
 					mayor = numero1;
+					menor = numero2;
 					if (mayor < numero3) {
 						mayor = numero3;
+					
 					}
 				} else {
 					mayor = numero2;
+					menor = numero1;
 					if (mayor < numero3) {
 						mayor = numero3;
 					}
