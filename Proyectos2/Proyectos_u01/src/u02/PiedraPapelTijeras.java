@@ -7,61 +7,78 @@ public class PiedraPapelTijeras {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner (System.in);
-		System.out.println("Jugador 1 escoge:");
-		System.out.println("1 -piedra");
-		System.out.println("2 -papel");
-		System.out.println("3 -tijeras");
-		String jugador1 =scan.nextLine();
-		jugador1 = jugador1.toLowerCase();
-		boolean correcto = true;
-		switch (jugador1) {
-		case"piedra" :
-			System.out.println("has escogido piedra");
-			
-			break;
-		case "papel":
-			System.out.println("has escogido papel");
-			
-			break;
-		case "tijeras":
-			System.out.println("has escogido tijeras");
-			
-			break;
+		System.out.println("Bienvendo, vamos a jugar a piedra papel o tijeras!");
+		boolean entradaCorrecta = true;
+		boolean empate = false;
+		String salida = "";
+	
+		do {
+		System.out.println("Jugador elije qué vas a usar:");
+		System.out.println("piedra ");
+		System.out.println("papel ");
+		System.out.println("tijeras ");
+		String jugadaPlayer =scan.nextLine();
+		jugadaPlayer = jugadaPlayer.toLowerCase();
+			empate = false;
+			entradaCorrecta = true;
+			switch (jugadaPlayer) {
+			case "piedra":
+				System.out.println("has escogido piedra");
 
-		default: System.out.println("No has escogido ninguna opción valida!");
-		correcto = false;
-			break;
-			
-		}
-		
-		int opcion =(int)(Math.random()*3+1);
-		String s="" + opcion;
-		if(correcto) {
-		switch (s) {
-	case "1":
-		System.out.println("La máquina ha escogido piedra");
-		s = "piedra";
-		break;
-	case "2":
-		System.out.println("La máquina ha escogido papel");
-		s = "papel";
-		break;
-	case "3":
-		System.out.println("La máquina ha escogido tijeras");
-		s = "tijeras";
-		break;
+				break;
+			case "papel":
+				System.out.println("has escogido papel");
 
-	default: System.out.println("No has escogido ninguna opción valida!");
-		break;
-		}}
-		
-	if (jugador1 .equals(s)) {
-		System.out.println("Habeis quedado empate");
-	} else if (jugador1 .equals("piedra") && s .equals("papel") || (jugador1 .equals("tijeras") && s .equals("piedra") || (jugador1 .equals("papel") && s .equals("tijeras"))) ){
-		System.out.println("Has perdido");
-	}else if (jugador1 .equals("piedra") && s .equals("tijeras") || (jugador1 .equals("tijeras") && s .equals("papel") || (jugador1 .equals("papel") && s .equals("piedras"))) ){
-		System.out.println("Has ganado");
-	}
-	}
+				break;
+			case "tijeras":
+				System.out.println("has escogido tijeras");
 
+				break;
+
+			default:
+				System.out.println("No has escogido ninguna opción valida!");
+				entradaCorrecta = false;
+				break;
+
+			}
+			if(entradaCorrecta) {
+			int jugadaCpu = (int) (Math.random() * 3 + 1);
+			String jugadaCpuString = "" + jugadaCpu;
+
+			switch (jugadaCpuString) {
+			case "1":
+				System.out.println("La máquina ha escogido piedra");
+				jugadaCpuString = "piedra";
+				break;
+			case "2":
+				System.out.println("La máquina ha escogido papel");
+				jugadaCpuString = "papel";
+				break;
+			case "3":
+				System.out.println("La máquina ha escogido tijeras");
+				jugadaCpuString = "tijeras";
+				break;
+
+			default:
+				System.out.println("No has escogido ninguna opción valida!");
+				break;
+			}
+
+			if (jugadaPlayer.equals(jugadaCpuString)) {
+				System.out.println("Habéis quedado empate, " + jugadaPlayer + " empata con " + jugadaCpuString);
+				empate = true;
+
+			} else if (jugadaPlayer.equals("piedra") && jugadaCpuString.equals("papel")
+					|| (jugadaPlayer.equals("tijeras") && jugadaCpuString.equals("piedra")
+							|| (jugadaPlayer.equals("papel") && jugadaCpuString.equals("tijeras")))) {
+				System.out.println("Has perdido, " + jugadaCpuString + " le gana a " + jugadaPlayer);
+				empate = false;
+			} else  {
+				System.out.println("Has ganado, " + jugadaPlayer + " le gana a " + jugadaCpuString);
+				empate = false;
+			}}
+		}while(!entradaCorrecta || empate);
+		scan.close();
+		System.out.println(salida);
+}
 }
