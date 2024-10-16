@@ -1,22 +1,17 @@
-package u02;
+package com.AdrianHerrera.tarea2;
 
 import java.util.Scanner;
 
-/*
- * 1 comprimir archivo
- * 2 eliminar
- * 3 copiar archivo
- * 4 cerrar programa
- * Mostrar un error si no se elije ninguna */
-public class Menu {
+public class MenuCalculadora {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("elije una de las siguientes opciones tecleando el número correspondiente a cada una:");
-		System.out.println( "1 Comprimir archivo");
-		System.out.println(  "2 Eliminar archivo");		
-		System.out.println( "3 Copiar archivo");	
-		System.out.println( "4 Cerrar programa");		
+		
+		System.out.print("elije una de las siguientes opciones tecleando el número correspondiente a cada una:");
+		System.out.println("1 Comprimir archivo");
+		System.out.println("2 Eliminar archivo");		
+		System.out.println("3 Copiar archivo");	
+		System.out.println("4 Cerrar programa");		
 		int opcion = scan.nextInt();
 		
 		switch (opcion) {
@@ -41,5 +36,7 @@ public class Menu {
 		scan.close();
 
 	}
+
+	
 
 }
