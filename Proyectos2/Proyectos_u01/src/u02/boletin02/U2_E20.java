@@ -11,13 +11,14 @@ public class U2_E20 {
 		int n = scan.nextInt();
 		int numActual= 2;
 		int numAnt1=1;
-		int numAnt2=1;
+		int numAnt2=0;
 		System.out.println(0);
 		System.out.println(1);
 		System.out.println(1);
-			for (int index = 2 ; index <= n; index = numActual+numAnt1+numAnt2) {
-				numAnt1=numActual;
+		
+			for (int index = 2 ; index <= n; index = numAnt1+numAnt2) {
 				numAnt2=numAnt1;
+				numAnt1=numActual;
 				numActual=index;
 				System.out.println(index);
 			

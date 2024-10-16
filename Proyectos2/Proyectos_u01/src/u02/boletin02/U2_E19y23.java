@@ -5,7 +5,7 @@ package u02.boletin02;
 
 import java.util.Scanner;
 
-public class U2_E19 {
+public class U2_E19y23{
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
