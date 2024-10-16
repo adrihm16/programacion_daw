@@ -1,4 +1,4 @@
-package u02;
+package u02.boletin02;
 
 import java.util.Scanner;
 
