@@ -8,7 +8,7 @@ public class MenuCalculadora {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("elije una de las siguientes opciones tecleando el número correspondiente a cada una:");
-		System.out.println("1 Comprimir archivo");
+		System.out.println("");
 		System.out.println("2 Eliminar archivo");		
 		System.out.println("3 Copiar archivo");	
 		System.out.println("4 Cerrar programa");		
