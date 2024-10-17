@@ -7,7 +7,7 @@ public class Contraseña {
 	public static void main(String[] args) {
 		// declaración variables
 		String salida = "salida";
-		String nombreUser = "Pepito";
+		String nombreUser = "Pepe";
 		Scanner scan = new Scanner(System.in);
 		String contraseña = "Pepito1234";
 		String contrIntroducida = "";
