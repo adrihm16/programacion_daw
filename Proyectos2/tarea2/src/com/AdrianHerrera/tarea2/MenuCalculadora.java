@@ -11,9 +11,7 @@ public class MenuCalculadora {
 		int num1=0;
 		int num2=0;
 		do {
-			
-	
-		System.out.print("~~~~~~~~~~~~~~| CALCULADORA |~~~~~~~~~~~~~~");
+		System.out.println("~~~~~~~~~~~~~~| CALCULADORA |~~~~~~~~~~~~");
 		System.out.println("1 - Suma");
 		System.out.println("2 - Resta");		
 		System.out.println("3 - Multiplicación");	
