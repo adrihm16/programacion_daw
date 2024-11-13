@@ -19,7 +19,6 @@ public class Ej05u03 {
 			Calendar fechaNac = Calendar.getInstance();
 			fechaNac.setTime(fechaNacDate);
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
