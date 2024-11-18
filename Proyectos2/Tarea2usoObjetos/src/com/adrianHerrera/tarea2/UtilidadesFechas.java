@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class UtilidadesFechas {
-	/*
+	/**
 	 * devuelve la edad de una fecha en años
 	 * 
 	 * @param fechaIntroducida
@@ -30,7 +30,7 @@ public class UtilidadesFechas {
 		return edad;
 	}
 
-	/*
+	/**
 	 * Devuelve el mes del año en el que se encuentra la fecha introducida.
 	 * 
 	 * @param fechaIntroducida
@@ -84,10 +84,11 @@ public class UtilidadesFechas {
 				break;
 //No uso default porque no es posible que aparezca otro valor (En el calendario gregoriano) 
 			}
-		} catch (ParseException e) {
+		} catch (ParseException pe) {
 			System.err.println("El formato introducido no es correcto.");
-			e.printStackTrace();
+			pe.printStackTrace();
 		}
 		return mes;
 	}
+	
 }

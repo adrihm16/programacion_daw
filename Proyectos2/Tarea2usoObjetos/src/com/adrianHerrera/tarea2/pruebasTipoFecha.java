@@ -6,7 +6,7 @@ public class pruebasTipoFecha {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int opcion = 33;
+		int opcion = 0;
 		do {
 			System.out.println("Introduce el número de la función que quieras probar: ");
 			opcion = sc.nextInt();
@@ -32,6 +32,7 @@ public class pruebasTipoFecha {
 				System.out.println("Has elegido una opción incorrecta!");
 				break;
 			}
+			
 		} while (opcion != 0);
 		sc.close();
 	}
