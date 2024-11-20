@@ -46,7 +46,7 @@ public class UtilidadesMatematicas {
 	 */
 	public static int trozoNumero(int numero, int inicio, int fin) throws Exception {
 		if (inicio < 0 || fin < 0 || inicio > fin) {
-			throw new Exception("Las posiciones deben ser positivas y el inicio debe ser mayor que  el fin.");
+			throw new Exception("Las posiciones deben ser positivas y el fin debe ser mayor que  el inicio.");
 		}
 		if (numero < 0) {
 			numero *= -1;
