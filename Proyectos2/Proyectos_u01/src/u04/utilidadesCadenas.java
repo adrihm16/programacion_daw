@@ -31,7 +31,6 @@
 		 * conteoVocales: Debería contar el número de vocales en una cadena,
 		 * proporcionando así la cantidad total de letras 'a', 'e', 'i', 'o' y 'u'.
 		 * Extra: Incluye las vocales acentuadas en español.
-		 * 
 		 * @param cadena
 		 * @return
 		 */
