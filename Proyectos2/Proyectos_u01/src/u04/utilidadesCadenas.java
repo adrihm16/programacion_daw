@@ -53,7 +53,7 @@
 		public static int contarPalabras (String cadena) {
 			int palabras = 0;
 			String [] palabrasArray = StringUtils.split(cadena, " ");
-			return palabrasArray.lengthç;
+			return palabrasArray.length;
 		}
 	}
 
