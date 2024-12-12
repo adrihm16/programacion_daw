@@ -2,7 +2,7 @@ package u04;
 
 import java.util.Scanner;
 
-public class MatricesTriangulares {
+public class EjMatrices {
 
     // Esquema de la entrada: caso de prueba que marca el final
 
