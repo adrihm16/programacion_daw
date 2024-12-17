@@ -12,7 +12,6 @@ public class EjMatrices {
 
         // LEER CASO DE PRUEBA
         int dim = in.nextInt();
-
         if (dim == 0) {
             return false;
         } else {
