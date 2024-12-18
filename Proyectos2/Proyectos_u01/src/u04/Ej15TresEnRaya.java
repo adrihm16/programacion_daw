@@ -2,8 +2,6 @@ package u04;
 
 import java.util.Scanner;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class Ej15TresEnRaya {
 
 	public static void main(String[] args) {
@@ -36,7 +34,6 @@ public class Ej15TresEnRaya {
 		} else {
 			System.err.println("Entrada inválida");
 		}
-
 	}
 
 	private static void mostrarTablero(String tablero[][]) {
@@ -50,7 +47,6 @@ public class Ej15TresEnRaya {
 				} else {
 					System.out.print(tablero[i][j] + "\t");
 				}
-			
 			}
 			System.out.println("");
 			System.out.println("");
