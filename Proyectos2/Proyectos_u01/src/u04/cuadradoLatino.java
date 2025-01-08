@@ -26,6 +26,7 @@ public class cuadradoLatino {
 		System.out.println("Introduce la dimensión del cuadrado latino");
 		int tamañoCuadrado = sc.nextInt();
 		int cuadradoLatino[][]= new int[tamañoCuadrado][tamañoCuadrado];
+		System.out.println("hh");
 	}
 
 }
