@@ -24,9 +24,19 @@ public class cuadradoLatino {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduce la dimensión del cuadrado latino");
-		int tamañoCuadrado = sc.nextInt();
-		int cuadradoLatino[][]= new int[tamañoCuadrado][tamañoCuadrado];
-		System.out.println("hh");
+		int n = sc.nextInt();
+		int [][] cuadradoLatino= new int[n][n];
+		for (int i = 0; i < n; i++) {
+			System.out.println("Introduce el siguiente número de la primera fila");
+			int numActual = sc.nextInt();
+			cuadradoLatino[0][i] = numActual;
+		}
+		//Rellenar el resto de filas con rotaciones de la anterior
+		int numAux = cuadradoLatino[0][n-1];
+		for (int i = n-2; i >= 0 ; i--) {
+		
+		}
+		sc.close();
 	}
 
 }
