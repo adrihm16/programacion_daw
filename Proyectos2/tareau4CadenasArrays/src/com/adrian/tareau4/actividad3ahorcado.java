@@ -21,7 +21,7 @@ public class actividad3ahorcado {
 			boolean palabraCorrecta = true;
 			System.out.println("Introduce una opción:\n1.- Jugar\n2.- Finalizar el juego");
 			opcion1 = sc.nextInt();
-			sc.nextLine(); // Consumir el salto de línea
+			sc.nextLine(); 
 
 			switch (opcion1) {
 			case 1:
@@ -71,7 +71,7 @@ public class actividad3ahorcado {
 							sc.nextLine();
 							if (palabraSelect.equalsIgnoreCase(palabra)) {
 	                            System.out.println("¡Correcto! La palabra era: " + palabra);
-	                            opcion2 = "s"; // Salir del juego
+	                            opcion2 = "s";
 	                        } else {
 	                            System.out.println("Respuesta incorrecta.");
 	                        }
