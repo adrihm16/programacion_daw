@@ -19,7 +19,7 @@ import java.util.Scanner;
  * 3 4 1 2
  * 2 3 4 1
  */
-public class cuadradoLatino {
+public class matriz {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
