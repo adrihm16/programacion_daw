@@ -1,0 +1,20 @@
+ sort(T[] a): Ordena el array en orden ascendente. Ejemplo:
+ int [] numeros = {5, 3, 8, 1};
+ Arrays.sort(numeros); // Resultado: [1, 3, 5, 8]
+  
+ binarySearch(T[] a, T key): Busca un elemento en el array y devuelve cuántos hay. Ejemplo:
+ int posicion = Arrays.binarySearch(numeros, 3); // Resultado: 1
+  
+ equals(T[] a, T[] a2): Compara si dos arrays son iguales elemento a elemento y devuelve un boolean. Ejemplo:
+ boolean sonIguales = Arrays.equals(numeros, numeros2); // Resultado: false
+ 
+ fill(T[] a, T val): Llena todos los elementos del array con el valor especificado. 
+ Ejemplo:
+ Arrays.fill(relleno, 7); // Resultado: [7, 7, 7, 7, 7]
+ 
+ copyOf(T[] original, int newLength): Crea una copia del array original con la longitud especificada. Ejemplo:
+ Integer[] copia = Arrays.copyOf(numeros, 6); // Resultado: [1, 3, 5, 8, null, null]
+  
+ toString(T[] a): Devuelve una representación en String del array. Ejemplo:
+ String representacion = Arrays.toString(numeros); // Resultado: "[1, 3, 5, 8]"
+ 
