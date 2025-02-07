@@ -10,7 +10,7 @@ public class actividad6Maquina {
 		String[][] productos = { { "CCola", "SP", "FaNar" }, { "FaLim", "RBull", "Mons" }, { "Pepsi", "SW", "Agua" },
 				{ "CCamp", "Hein", "ZuPiñ" } };
 		int[][] cantidad = new int[4][3];
-		// Llenar cada fila con el valor 4
+		// Llenar cada fila con el valor 5
 		for (int i = 0; i < cantidad.length; i++) {
 			Arrays.fill(cantidad[i], 5);
 		}
@@ -67,7 +67,7 @@ public class actividad6Maquina {
 			case 3:
 				System.out.println("Apgando la máquina...");
 				break;
-
+ 
 			default:
 				System.out.println("No has introducido una opción correcta, vuelve a introducir una.");
 				break;
