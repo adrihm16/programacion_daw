@@ -178,4 +178,7 @@ public class Equipo {
 		}
 		return cat;
 	}
+
+
+	
 }

@@ -22,7 +22,7 @@ public class cuentaAhorro extends CuentaBancaria {
 	public String toString() {
 	    StringBuilder sb = new StringBuilder();
 	    sb.append(super.toString()); // Llamar a toString() de CuentaBancaria
-	    sb.append("Interés anual: " + interesAnual + "\n");
+	    sb.append("Interés anual: " + interesAnual*100 + "%\n");
 	    sb.append("******************************************************\n");
 	    return sb.toString();
 	}

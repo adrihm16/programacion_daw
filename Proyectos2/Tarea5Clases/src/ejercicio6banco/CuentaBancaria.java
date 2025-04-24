@@ -1,8 +1,5 @@
 package ejercicio6banco;
 
-import java.util.Iterator;
-import java.util.Random;
-
 import tareaBanco.persona.Persona;
 
 public abstract class CuentaBancaria {
@@ -36,16 +33,12 @@ public abstract class CuentaBancaria {
 		return iban;
 	}
 
-	public void setIban(String iban) {
-		this.iban = iban;
-	}
-
 	private String generarIBAN() {
 		StringBuilder iban = new StringBuilder();
 		String codigoPais = "ES";
 		iban.append(codigoPais);
 		for (int i = 0; i < 19; i++) {
-			  iban.append((int) (Math.random() * 10)); 
+			iban.append((int) (Math.random() * 10));
 		}
 		return iban.toString();
 	}

@@ -5,10 +5,11 @@ import tareaBanco.persona.Persona;
 public class CuentaCorrienteEmpresa extends CuentaCorriente {
 	private double maxDescubierto;
 	private double interesDescubierto = 0.05d;
-	private double comisionFija = 0.05d;
-	public CuentaCorrienteEmpresa(Persona titular, double saldo, String agentes, double maxDescubierto) {
+	private double comisionFija;
+	public CuentaCorrienteEmpresa(Persona titular, double saldo, String agentes, double maxDescubierto, double comisionFija) {
 		super(titular, saldo, agentes);
 		this.maxDescubierto = maxDescubierto;
+		this.comisionFija = comisionFija;
 	}
 	public double getMaxDescubierto() {
 		return maxDescubierto;
@@ -33,7 +34,7 @@ public class CuentaCorrienteEmpresa extends CuentaCorriente {
 	    StringBuilder sb = new StringBuilder();
 	    sb.append(super.toString()); // Llamar a toString() de CuentaCorriente
 	    sb.append("Máximo descubierto: " + maxDescubierto + "\n");
-	    sb.append("Interés por descubierto: " + interesDescubierto + "\n");
+	    sb.append("Interés por descubierto: " + interesDescubierto*100 + "%\n");
 	    sb.append("Comisión fija: " + comisionFija + "\n");
 	    sb.append("******************************************************\n");
 	    return sb.toString();
